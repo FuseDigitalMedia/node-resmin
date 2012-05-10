@@ -5,7 +5,11 @@ html
     //- Stylesheets
     - each url in resmin.css.all
       link(rel='stylesheet', href=url)
+    - each url in resmin.stylesheets.all
+      link(rel='stylesheet', href=url)
     //- Scripts
     - each url in resmin.js.all
+      script(src=url)
+    - each url in resmin.javascripts.all
       script(src=url)
   body!= body
